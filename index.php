@@ -7,10 +7,10 @@
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body> 
 
 <!-- header -->
-<header>
+
 <div class="row header">
 
      <div id="logo">
@@ -22,7 +22,7 @@
       <nav class="social_media_icons">
         <a href="#"><img src="instagram.png" alt="instagram" class="icon"></a>
         <a href="#"><img src="facebook.png" alt="facebook" class="icon"></a>
-        <a href="https://github.com/minej2004/CodingWar.git"><img src="github.png" alt="github" class="icon"></a>
+        <a href="#"><img src="github.png" alt="github" class="icon"></a>
         <a href="https://t.me/joinchat/I5L55Bh9BiEOOc2MQnxQRw"><img src="telegram.png" alt="telegram" class="icon"></a>
       </nav>
     </div>
@@ -77,19 +77,19 @@
           <input type="text" name="login" placeholder="Логин"><br>
           <input type="text" name="name" placeholder="Имя"><br>
           <input type="password" name="pass" placeholder="Секретный код"><br>
-          <input type="button" class="btn-success" id="open_entrance" value ="Войти">
-          <input type="submit" class="btn-success" value="Зарегестрироваться">
+          <input type="button" class="Log_in btn-success" id="open_entrance" value ="Войти">
+          <input type="submit" class="Registration btn-success" value="Зарегестрироваться">
       </form>
     </div>
             <div class="modal_window logine" id="entrance">
               <div class="exit" id="show_entrance">&#215</div>
               <form action="auth.php" method="post">
-                  <h2>Log In</h2>
-                  <h5>Войти</h5>
-                  <input type="text" name="login" placeholder="Логин"><br>
-                  <input type="password" name="pass" placeholder="Секретный код"><br>
-                  <input type="submit" class="Log_in btn-success" value ="Войти">
-              </form>
+          <h2>Log In</h2>
+          <h5>Войти</h5>
+          <input type="text" name="login" placeholder="Логин"><br>
+          <input type="password" name="pass" placeholder="Секретный код"><br>
+          <input type="submit" class="Log_in btn-success" value ="Войти">
+      </form>
             </div>
 <script>
   let entrance = document.getElementById("entrance")
@@ -133,7 +133,7 @@
     <image class="img_new" src="storefront-bundle-hero.png">
   </div>
 
-
+  <div class="text col-sm-7">
       <div class="data-new">Дата публикации: 12.01.2021</div><br>
       <div class="excerpt-new">Это тут будет новость. сегодня Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -143,7 +143,7 @@
      <button id="see_new_12_01_2021">Посмотреть</button> 
       </div>
 
-<div class="modal_window" id="totally_new_12_01_2021"><div class="exit" id="show_window2">&#215</div>
+      <div class="modal_window" id="totally_new_12_01_2021"><div class="exit" id="show_window2">&#215</div>
      <h3>Продолжение Новостьи 12.01.2021 </h3>
       <p>Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости  Продолжение новости </p>
     </div>
@@ -191,7 +191,7 @@
   <div class="modal_window" id="totally_new_15_01_2021">
     <div class="exit" id="show_window3">&#215</div>
      <h3>Продолжение Новостьи 12.01.2021 </h3>
-      <p>Продолжение новости 2  Продолжение новости 5 Продолжение новости 2 </p>
+      <p>Продолжение новости  gjkexbkjcm dhjlt </p>
     </div>
 
     <script>

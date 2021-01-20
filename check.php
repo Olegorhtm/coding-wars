@@ -27,7 +27,7 @@ else {
 }
 
 
-if (mb_strlen($pass)<4) {
+if (mb_strlen($pass)<0) {
 	echo "Пароль для вашей безопасности слишком мал(меньше пяти). Взломают же...</br></br>";
 }
 elseif(mb_strlen($pass)>16) {
@@ -42,13 +42,21 @@ if ( $registration == 3) {
 	echo "Вы зарегистрировались Удачно!!! Запишите данные и идем дальше.</br></br>";
 	
 } else {
-	echo "Недозарегистрировались! Вернитесь и поправтесь!</br></br>";
+	echo "Недозарегистрировались! Вернитесь и поправтесь!</br></br>";?> <a href="/">Назад вернуться</a> <?php
 	exit();
 	}
 
-$pass = md5($pass . "a");
+$pass = md5($pass . "ac09ew0-ok");
 
 $mysql = new mysqli('localhost', 'root', '', 'users_bd');
+
+$result = $mysql->query("SELECT * FROM `user` WHERE `login` = '$login'");
+$user = $result->fetch_assoc();
+if (count($user) > 0) {
+	echo "Такой логин уже существует! Записать вас в БД не получаеться... :(";
+	?><br><br><a href="/">Назад вернуться</a><?
+	exit();
+}
 
 $mysql -> query("INSERT INTO `user`(`login`,`name`,`pass`) VALUES('$login', '$name', '$pass')");
 
@@ -56,3 +64,5 @@ $mysql -> close();
 
 // header('location: /');
 ?>
+
+<br><a href="/">На главную</a>

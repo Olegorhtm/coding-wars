@@ -11,12 +11,8 @@ $result = $mysql->query("SELECT * FROM `user` WHERE `login` = '$login' AND `pass
 $user = $result->fetch_assoc();
 if (count($user) == 0) {
 	echo "Такового пользователя еще нету...";
-	exit();
-}
-
-print_r($user);
-exit();
+} else {echo "Привет " . $login . ", тебе чтото нужно?";}
 
 $mysql -> close();
 
-?>
+?> <a href="/">На главную</a>
